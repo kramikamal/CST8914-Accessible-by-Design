@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4 - JavaScript</title>
+
+</head>
+
+<body>
+    <h1>HTML DOM Events</h1>
+    <p>Trigger a function on hover that will output "Hello World":</p>
+
+    <button onblur="myFunction_Hide()" onfocus="myFunction_Show()" onmouseover="myFunction_Show()"
+        onmouseout="myFunction_Hide()">Action!</button>
+    <p id="demo"></p>
+</body>
+<script>
+    function myFunction_Show() {
+        document.getElementById("demo").innerHTML = "Hello World";
+    }
+    function myFunction_Hide() {
+        document.getElementById("demo").innerHTML = "";
+    }
+</script>
+
+</html>
